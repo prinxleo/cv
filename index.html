@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asad Ali — Senior Medical Laboratory Technician (MLT) | Phlebotomist | QA/QC</title>
+  <style>
+    :root {
+      /* iOS Light Mode Glass Palette */
+      --bg-primary: #eef2f9;
+      --bg-mesh-1: rgba(52, 199, 89, 0.22);
+      --bg-mesh-2: rgba(0, 122, 255, 0.20);
+      --bg-mesh-3: rgba(88, 86, 214, 0.18);
+      --bg-mesh-4: rgba(48, 176, 199, 0.22);
+
+      --glass-card: rgba(255, 255, 255, 0.58);
+      --glass-card-hover: rgba(255, 255, 255, 0.74);
+      --glass-border: rgba(255, 255, 255, 0.78);
+      --glass-border-subtle: rgba(255, 255, 255, 0.55);
+      --glass-shadow: 0 12px 36px -8px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+      --glass-inner-glow: inset 0 1px 1px rgba(255, 255, 255, 0.9);
+
+      /* Transparent modern pill boxes for comma/semicolon-separated items */
+      --pill-bg: rgba(255, 255, 255, 0.36);
+      --pill-bg-hover: rgba(255, 255, 255, 0.68);
+      --pill-border: rgba(15, 23, 42, 0.13);
+      --pill-border-hover: rgba(0, 122, 255, 0.45);
+      --pill-shadow: 0 4px 14px rgba(15, 23, 42, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+
+      --text-primary: #1c1c1e;
+      --text-secondary: #3a3a3c;
+      --text-muted: #636366;
+      --accent-blue: #007aff;
+      --accent-teal: #0d9488;
+      --accent-green: #28cd41;
+      --accent-indigo: #5856d6;
+      --accent-orange: #ff9500;
+      --badge-tint: rgba(0, 122, 255, 0.10);
+      --nav-bg: rgba(255, 255, 255, 0.65);
+    }
+
+    [data-theme="dark"] {
+      /* iOS Dark Mode Glass Palette */
+      --bg-primary: #0b0f19;
+      --bg-mesh-1: rgba(48, 209, 88, 0.16);
+      --bg-mesh-2: rgba(10, 132, 255, 0.20);
+      --bg-mesh-3: rgba(94, 92, 230, 0.18);
+      --bg-mesh-4: rgba(100, 210, 255, 0.14);
+
+      --glass-card: rgba(28, 28, 32, 0.56);
+      --glass-card-hover: rgba(44, 44, 48, 0.68);
+      --glass-border: rgba(255, 255, 255, 0.16);
+      --glass-border-subtle: rgba(255, 255, 255, 0.10);
+      --glass-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.35);
+      --glass-inner-glow: inset 0 1px 0.5px rgba(255, 255, 255, 0.22);
+
+      /* Transparent modern pill boxes in Dark Mode */
+      --pill-bg: rgba(255, 255, 255, 0.07);
+      --pill-bg-hover: rgba(255, 255, 255, 0.15);
+      --pill-border: rgba(255, 255, 255, 0.20);
+      --pill-border-hover: rgba(10, 132, 255, 0.65);
+      --pill-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+      --text-primary: #f5f5f7;
+      --text-secondary: #d1d1d6;
+      --text-muted: #98989d;
+      --accent-blue: #0a84ff;
+      --accent-teal: #2dd4bf;
+      --accent-green: #30d158;
+      --accent-indigo: #5e5ce6;
+      --accent-orange: #ff9f0a;
+      --badge-tint: rgba(10, 132, 255, 0.18);
+      --nav-bg: rgba(28, 28, 30, 0.68);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+
+    /* Ambient iOS Mesh Wallpaper */
+    .ios-wallpaper {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(85px);
+      transform: translateZ(0);
+    }
+
+    .orb-1 {
+      width: 520px;
+      height: 520px;
+      background: var(--bg-mesh-1);
+      top: -120px;
+      left: -100px;
+    }
+
+    .orb-2 {
+      width: 580px;
+      height: 580px;
+      background: var(--bg-mesh-2);
+      top: 8%;
+      right: -140px;
+    }
+
+    .orb-3 {
+      width: 500px;
+      height: 500px;
+      background: var(--bg-mesh-3);
+      bottom: 12%;
+      left: 10%;
+    }
+
+    .orb-4 {
+      width: 450px;
+      height: 450px;
+      background: var(--bg-mesh-4);
+      bottom: -100px;
+      right: 8%;
+    }
+
+    /* Floating iOS Top Bar (Dynamic Island inspired) */
+    .ios-navbar-wrap {
+      position: sticky;
+      top: 14px;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      padding: 0 16px;
+      margin-bottom: 24px;
+    }
+
+    .ios-navbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--nav-bg);
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--glass-shadow), var(--glass-inner-glow);
+      max-width: 1080px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 0.84rem;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      background: var(--badge-tint);
+      color: var(--accent-blue);
+    }
+
+    .nav-divider {
+      width: 1px;
+      height: 20px;
+      background: var(--pill-border);
+      margin: 0 4px;
+    }
+
+    .ios-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--pill-border);
+      background: var(--pill-bg);
+      color: var(--text-primary);
+      padding: 6px 13px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      transition: all 0.2s ease;
+    }
+
+    .ios-btn:hover {
+      background: var(--pill-bg-hover);
+      border-color: var(--pill-border-hover);
+      transform: translateY(-1px);
+    }
+
+    .ios-btn-primary {
+      background: var(--accent-blue);
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .ios-btn-primary:hover {
+      background: #0062cc;
+      border-color: transparent;
+      color: #ffffff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 8px 20px 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    /* iOS Frosted Glass Card */
+    .ios-card {
+      background: var(--glass-card);
+      backdrop-filter: blur(26px) saturate(180%);
+      -webkit-backdrop-filter: blur(26px) saturate(180%);
+      border: 1px solid var(--glass-border);
+      border-radius: 28px;
+      padding: 28px 30px;
+      box-shadow: var(--glass-shadow), var(--glass-inner-glow);
+      transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    /* Hero Header Card */
+    .hero-card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .avatar-ring {
+      width: 84px;
+      height: 84px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-teal));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      box-shadow: 0 10px 24px rgba(0, 122, 255, 0.28), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+      flex-shrink: 0;
+    }
+
+    .hero-identity {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .status-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 11px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(40, 205, 65, 0.14);
+      color: var(--accent-teal);
+      border: 1px solid rgba(40, 205, 65, 0.32);
+      margin-bottom: 8px;
+    }
+
+    [data-theme="dark"] .status-chip {
+      color: #30d158;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #28cd41;
+      box-shadow: 0 0 8px #28cd41;
+    }
+
+    .hero-name {
+      font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+
+    .hero-roles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .role-pill {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 5px 13px;
+      border-radius: 999px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      color: var(--accent-blue);
+    }
+
+    /* Contact Info Grid (iOS Widget Style) */
+    .contact-widgets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .contact-widget {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 15px;
+      border-radius: 18px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: all 0.2s ease;
+    }
+
+    .contact-widget:hover {
+      background: var(--pill-bg-hover);
+      border-color: var(--pill-border-hover);
+      transform: translateY(-2px);
+    }
+
+    .widget-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .icon-phone { background: linear-gradient(135deg, #34c759, #28a745); }
+    .icon-mail  { background: linear-gradient(135deg, #007aff, #0055d4); }
+    .icon-pin   { background: linear-gradient(135deg, #ff9500, #ff6b00); }
+    .icon-stat  { background: linear-gradient(135deg, #5856d6, #4338ca); }
+
+    .widget-meta {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .widget-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+
+    .widget-value {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Section Header */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+
+    .section-title-group {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .section-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--badge-tint);
+      color: var(--accent-blue);
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 1.22rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+
+    .section-count {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      color: var(--text-muted);
+    }
+
+    .sub-group-block {
+      margin-bottom: 18px;
+    }
+
+    .sub-group-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .sub-group-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-teal);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Summary Paragraph */
+    .summary-text {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    /* Filter Search Bar for Glass Boxes */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 16px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      margin-bottom: 4px;
+    }
+
+    .filter-input {
+      border: none;
+      background: transparent;
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      width: 100%;
+      outline: none;
+    }
+
+    .filter-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    /* ROUND BORDER TRANSPARENT MODERN BOXES (FOR COMMA / SEMICOLON ITEMS) */
+    .glass-pills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .modern-glass-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 9px 17px;
+      border-radius: 999px; /* Fully round modern border */
+      background: var(--pill-bg);
+      backdrop-filter: blur(18px) saturate(170%);
+      -webkit-backdrop-filter: blur(18px) saturate(170%);
+      border: 1.2px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      color: var(--text-primary);
+      font-size: 0.89rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      transition: all 0.22s cubic-bezier(0.25, 0.8, 0.25, 1);
+      cursor: default;
+      user-select: none;
+    }
+
+    .modern-glass-box:hover {
+      background: var(--pill-bg-hover);
+      border-color: var(--pill-border-hover);
+      transform: translateY(-2px) scale(1.015);
+      box-shadow: 0 8px 20px rgba(0, 122, 255, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    }
+
+    .box-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .dot-blue   { background: var(--accent-blue); box-shadow: 0 0 6px rgba(0, 122, 255, 0.5); }
+    .dot-teal   { background: var(--accent-teal); box-shadow: 0 0 6px rgba(13, 148, 136, 0.5); }
+    .dot-indigo { background: var(--accent-indigo); box-shadow: 0 0 6px rgba(88, 86, 214, 0.5); }
+    .dot-green  { background: var(--accent-green); box-shadow: 0 0 6px rgba(40, 205, 65, 0.5); }
+    .dot-orange { background: var(--accent-orange); box-shadow: 0 0 6px rgba(255, 149, 0, 0.5); }
+
+    /* Experience Timeline Cards */
+    .timeline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .exp-glass-item {
+      padding: 20px 22px;
+      border-radius: 22px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      transition: all 0.2s ease;
+    }
+
+    .exp-glass-item:hover {
+      background: var(--pill-bg-hover);
+      border-color: var(--pill-border-hover);
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .exp-role {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .exp-org {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--accent-blue);
+      margin-top: 2px;
+    }
+
+    .exp-badge {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: var(--badge-tint);
+      color: var(--accent-blue);
+      border: 1px solid rgba(0, 122, 255, 0.22);
+      white-space: nowrap;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .exp-bullets li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 0.93rem;
+      color: var(--text-secondary);
+    }
+
+    .exp-bullets li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-blue);
+    }
+
+    /* Two Column Bottom Grid */
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 22px;
+    }
+
+    /* Education Cards */
+    .edu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .edu-item {
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .edu-degree {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .edu-school {
+      font-size: 0.87rem;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .edu-score {
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(40, 205, 65, 0.14);
+      color: var(--accent-teal);
+      border: 1px solid rgba(40, 205, 65, 0.3);
+      white-space: nowrap;
+    }
+
+    [data-theme="dark"] .edu-score {
+      color: #30d158;
+    }
+
+    .hidden-pill {
+      display: none !important;
+    }
+
+    /* Print Styling */
+    @media print {
+      .ios-navbar-wrap, .filter-bar {
+        display: none !important;
+      }
+      body {
+        background: #ffffff !important;
+      }
+      .ios-card {
+        box-shadow: none !important;
+        border: 1px solid #d1d5db !important;
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .ios-card {
+        padding: 20px 18px;
+        border-radius: 22px;
+      }
+      .modern-glass-box {
+        padding: 8px 14px;
+        font-size: 0.84rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient iOS Mesh Wallpaper -->
+  <div class="ios-wallpaper">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <!-- Floating iOS Dynamic Island Navbar -->
+  <div class="ios-navbar-wrap">
+    <nav class="ios-navbar" aria-label="Section Navigation">
+      <div class="nav-links">
+        <a href="#summary" class="nav-link">Summary</a>
+        <a href="#competencies" class="nav-link">Core Competencies</a>
+        <a href="#skills" class="nav-link">Technical Skills</a>
+        <a href="#expertise" class="nav-link">Expertise</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#education" class="nav-link">Education</a>
+      </div>
+      <div class="nav-divider"></div>
+      <button class="ios-btn" id="themeToggle" type="button" title="Switch iOS Light / Dark Glass">
+        <span id="themeIcon">🌙</span>
+        <span id="themeLabel">Dark Glass</span>
+      </button>
+      <button class="ios-btn ios-btn-primary" type="button" onclick="window.print()">
+        <span>🖨️</span>
+        <span>Save / Print PDF</span>
+      </button>
+    </nav>
+  </div>
+
+  <main class="container">
+
+    <!-- HERO PROFILE CARD -->
+    <header class="ios-card hero-card">
+      <div class="hero-top">
+        <div class="avatar-ring" aria-hidden="true">AA</div>
+        <div class="hero-identity">
+          <div class="status-chip">
+            <span class="status-dot"></span>
+            <span>4+ Years Diagnostic &amp; Hospital Laboratory Experience • &gt;98% Error-Free Reporting</span>
+          </div>
+          <h1 class="hero-name">Asad Ali</h1>
+          <div class="hero-roles">
+            <span class="role-pill">SENIOR MEDICAL LABORATORY TECHNICIAN (MLT)</span>
+            <span class="role-pill">PHLEBOTOMIST</span>
+            <span class="role-pill">QA/QC</span>
+            <span class="role-pill">BIOCHEMISTRY</span>
+            <span class="role-pill">SPECIAL CHEMISTRY</span>
+            <span class="role-pill">HEMATOLOGY</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-widgets">
+        <a href="tel:+923219129313" class="contact-widget">
+          <div class="widget-icon icon-phone">📞</div>
+          <div class="widget-meta">
+            <span class="widget-label">WhatsApp / Phone</span>
+            <span class="widget-value">+92 321 9129313</span>
+          </div>
+        </a>
+        <a href="mailto:princetechcgi@gmail.com" class="contact-widget">
+          <div class="widget-icon icon-mail">✉️</div>
+          <div class="widget-meta">
+            <span class="widget-label">Email Address</span>
+            <span class="widget-value">princetechcgi@gmail.com</span>
+          </div>
+        </a>
+        <div class="contact-widget">
+          <div class="widget-icon icon-pin">📍</div>
+          <div class="widget-meta">
+            <span class="widget-label">Location</span>
+            <span class="widget-value">Chishtian / Bahawalnagar, Punjab, Pakistan</span>
+          </div>
+        </div>
+        <div class="contact-widget">
+          <div class="widget-icon icon-stat">⚡</div>
+          <div class="widget-meta">
+            <span class="widget-label">Daily Throughput</span>
+            <span class="widget-value">50–70 Samples/Day (&gt;98% Accuracy)</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section id="summary" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">✨</div>
+          <h2 class="section-title">Professional Summary</h2>
+        </div>
+        <span class="section-count">4+ Years Hands-On MLT Experience</span>
+      </div>
+      <p class="summary-text">
+        Medical Laboratory Technician with 4+ years of documented hands-on experience across diagnostic laboratory and hospital environments, with strengths in phlebotomy, specimen processing, biochemistry, special chemistry, hematology, microbiology, microscopy, TB diagnostics and clinical reporting. Experienced in routine and specialized testing, including work with iCHROMA-III and Beckman Coulter analyzers, GenExpert TB testing and AFB microscopy. Proven ability to manage end-to-end laboratory workflows, patient data entry, result reporting, quality assurance/quality control activities, laboratory records, equipment documentation and biosafety procedures. Previously processed 50–70 samples daily while maintaining more than 98% error-free reporting across laboratory sections. Comfortable coordinating with doctors, patients and cross-functional laboratory teams while maintaining confidentiality, SOP compliance and timely diagnostic services.
+      </p>
+    </section>
+
+    <!-- QUICK LIVE FILTER FOR ALL TRANSPARENT BOXES -->
+    <div class="filter-bar">
+      <span>🔍</span>
+      <input
+        type="text"
+        id="skillSearch"
+        class="filter-input"
+        placeholder="Filter Core Competencies, Technical Skills, Expertise & Certifications (e.g., iCHROMA-III, CBC, LIMS, ISO 15189, GenExpert)..."
+        aria-label="Filter skills and certifications"
+      />
+    </div>
+
+    <!-- CORE COMPETENCIES (Every semicolon/comma item in its own round-bordered transparent modern box) -->
+    <section id="competencies" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">🎯</div>
+          <h2 class="section-title">Core Competencies</h2>
+        </div>
+        <span class="section-count">60 Core Competencies</span>
+      </div>
+
+      <div id="competenciesGrid">
+        <!-- Clinical Diagnostics -->
+        <div class="sub-group-block">
+          <div class="sub-group-label">Clinical Diagnostics</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Phlebotomy (Adult &amp; Pediatric)</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>CBC</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>ESR</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>LFT</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>RFT</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Lipid Profile</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>CRP</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Hematology</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Biochemistry</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Special Chemistry</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Serology</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Rapid Tests</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Immunoassays</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>TB Diagnostics</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>AFB Microscopy</span></div>
+          </div>
+        </div>
+
+        <!-- Laboratory Operations -->
+        <div class="sub-group-block">
+          <div class="sub-group-label">Laboratory Operations</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Specimen Collection &amp; Processing</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Sample Rejection Criteria</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Slide Preparation</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Staining</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Microscopy</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Result Dispatch</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>TAT Management</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Inventory &amp; Consumables</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Reagent Handling</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Autoclave</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Centrifuge</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Incubator</span></div>
+          </div>
+        </div>
+
+        <!-- Quality & Compliance -->
+        <div class="sub-group-block">
+          <div class="sub-group-label">Quality &amp; Compliance</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>QA/QC Procedures</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>CLSI SOP Compliance</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Biosafety</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Infection Prevention</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Quality Indicators</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Laboratory Logs</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>MMDs</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Worksheets</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>ISO 15189 Awareness</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>ISO 9001:2015</span></div>
+          </div>
+        </div>
+
+        <!-- Data & Reporting -->
+        <div class="sub-group-block">
+          <div class="sub-group-label">Data &amp; Reporting</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Clinical Data Entry</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>HISDU Portals</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>LIMS</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Hospital Reporting Systems</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Patient Records</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Result Verification</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Report Printing</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Result Dispatch</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Data Privacy</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Cross-department Communication</span></div>
+          </div>
+        </div>
+
+        <!-- Equipment & Instrumentation -->
+        <div class="sub-group-block">
+          <div class="sub-group-label">Equipment &amp; Instrumentation</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>iCHROMA-III</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Beckman Coulter Analyzers</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Automated Hematology/Chemistry Analyzers</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Autoclave</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Centrifuge</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Incubator</span></div>
+          </div>
+        </div>
+
+        <!-- Patient & Team Support -->
+        <div class="sub-group-block">
+          <div class="sub-group-label">Patient &amp; Team Support</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Patient Handling</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Test Guidance</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Doctor Coordination</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Team Collaboration</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Front-desk Support</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Professional Ethics</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-blue"></span><span>Confidentiality</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS (Every semicolon/comma item in its own round-bordered transparent modern box) -->
+    <section id="skills" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">🔬</div>
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
+        <span class="section-count">16 Technical Skills</span>
+      </div>
+
+      <div id="skillsGrid">
+        <div class="sub-group-block">
+          <div class="sub-group-label">Laboratory Information &amp; Reporting</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>HISDU Online Portal</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>LIMS</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Hospital Reporting Systems</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Clinical Data Entry</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Digital Record Management</span></div>
+          </div>
+        </div>
+
+        <div class="sub-group-block">
+          <div class="sub-group-label">Laboratory Automation</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>iCHROMA-III</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Beckman Coulter</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Automated Hematology &amp; Chemistry Analyzers</span></div>
+          </div>
+        </div>
+
+        <div class="sub-group-block">
+          <div class="sub-group-label">Documentation</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Laboratory Logs</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Machine Maintenance Documents (MMDs)</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Daily Worksheets</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Test Reports</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>Result Dispatch Records</span></div>
+          </div>
+        </div>
+
+        <div class="sub-group-block">
+          <div class="sub-group-label">Microsoft Office</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>MS Word</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>MS Excel</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-teal"></span><span>MS PowerPoint</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL EXPERTISE (Page 2 specialized section in round-bordered transparent modern boxes) -->
+    <section id="expertise" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">🧪</div>
+          <h2 class="section-title">Technical Expertise</h2>
+        </div>
+        <span class="section-count">21 Specialized Diagnostic Areas</span>
+      </div>
+
+      <div id="expertiseGrid">
+        <div class="sub-group-block">
+          <div class="sub-group-label">Biochemistry &amp; Special Chemistry</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Routine Chemistry</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>LFT</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>RFT</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Lipid Profile</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>CRP</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Advanced Immunoassays &amp; Special Chemistry Using Automated Analyzers</span></div>
+          </div>
+        </div>
+
+        <div class="sub-group-block">
+          <div class="sub-group-label">Hematology</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>CBC</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>ESR</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Routine Hematology Testing</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Automated Hematology Analysis</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Specimen &amp; Result Documentation</span></div>
+          </div>
+        </div>
+
+        <div class="sub-group-block">
+          <div class="sub-group-label">Microbiology &amp; TB Diagnostics</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Microbiology Testing</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Staining</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Microscopy</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>GenExpert Sputum Testing</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>AFB Testing &amp; Microscopy</span></div>
+          </div>
+        </div>
+
+        <div class="sub-group-block">
+          <div class="sub-group-label">Phlebotomy &amp; Specimen Handling</div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Adult &amp; Pediatric Phlebotomy</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Sample Processing</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Specimen Handling</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Specimen Rejection Criteria</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-green"></span><span>Biosafety</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAININGS & CERTIFICATIONS (Every item in its own round-bordered transparent modern box) -->
+    <section id="certifications" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">🏅</div>
+          <h2 class="section-title">Trainings &amp; Certifications</h2>
+        </div>
+        <span class="section-count">13 Trainings &amp; Certifications</span>
+      </div>
+      <div class="glass-pills-grid" id="certificationsGrid">
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>WHO Training: COVID-19 Pandemic Response &amp; Infection Prevention</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>WHO Training: TB Screening, Diagnosis &amp; Control</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>WHO Training: Infection Prevention &amp; Control Practices</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Alison / Online Training: Medical Laboratory Assisting</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Alison / Online Training: Basics of Clinical Chemistry</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Alison / Online Training: Hematology &amp; Sample Analysis</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Alison / Online Training: Laboratory Safety &amp; Quality Control</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Alison / Online Training: Biosafety &amp; Laboratory SOPs</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Alison / Online Training: Sample Collection &amp; Handling</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Alison / Online Training: LIMS (Introductory)</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Certification: ISO 9001:2015</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Certification: ISO 15189:2012</span></div>
+        <div class="modern-glass-box"><span class="box-dot dot-indigo"></span><span>Additional Certification: Graphics Designing and Office Professional</span></div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section id="experience" class="ios-card">
+      <div class="section-header">
+        <div class="section-title-group">
+          <div class="section-icon">💼</div>
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
+        <span class="section-count">4+ Years Clinical &amp; Hospital Roles</span>
+      </div>
+
+      <div class="timeline-list">
+        <!-- Exp 1 -->
+        <article class="exp-glass-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Senior Lab Technician</h3>
+              <p class="exp-org">New Lahore Lab, Sheikhupura</p>
+            </div>
+            <span class="exp-badge">2026 – Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Perform routine chemistry and hematology testing in accordance with established analytical protocols and laboratory procedures.</li>
+            <li>Conduct Acid-Fast Bacillus (AFB) testing and comprehensive routine microscopic examinations to support accurate diagnostic reporting.</li>
+            <li>Perform Special Chemistry testing using iCHROMA-III and Beckman Coulter analyzers, following required testing and quality-control procedures.</li>
+            <li>Manage front-desk reception activities, patient data entry and preparation of accurate clinical reports while maintaining patient information confidentiality.</li>
+            <li>Maintain laboratory logs, Machine Maintenance Documents (MMDs) and daily operational worksheets to support equipment tracking and laboratory documentation.</li>
+            <li>Apply Quality Assurance (QA) and Quality Control (QC) measures to support test precision, reliability and consistent laboratory performance.</li>
+          </ul>
+        </article>
+
+        <!-- Exp 2 -->
+        <article class="exp-glass-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Medical Laboratory Assistant &amp; Lab Manager</h3>
+              <p class="exp-org">Universal Lab, Chishtian</p>
+            </div>
+            <span class="exp-badge">2023 – 2024 • 1 Year</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Managed the end-to-end diagnostic laboratory workflow covering reception, specimen processing, testing, reporting and closing procedures.</li>
+            <li>Performed biochemistry, hematology, microbiology and serology testing with strong attention to accuracy and SOP compliance.</li>
+            <li>Processed clinical samples, prepared slides and conducted microscopy-based examinations to support diagnostic services.</li>
+            <li>Processed approximately <strong>50–70 samples per day</strong> while maintaining consistent workflow efficiency.</li>
+            <li>Maintained <strong>more than 98% error-free reporting</strong> across laboratory sections, based on the documented CV achievement.</li>
+            <li>Supported laboratory management, reporting, documentation and coordination activities to maintain smooth day-to-day operations.</li>
+          </ul>
+        </article>
+
+        <!-- Exp 3 -->
+        <article class="exp-glass-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Laboratory Technician &amp; Phlebotomist</h3>
+              <p class="exp-org">THQ Civil Hospital Chishtian, Bahawalnagar</p>
+            </div>
+            <span class="exp-badge">2022 – 2024 • 2+ Years</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Rotated across biochemistry, hematology, microbiology, parasitology and blood bank sections, gaining broad exposure to hospital laboratory operations.</li>
+            <li>Supported emergency and routine testing under the supervision of senior technologists while following laboratory procedures and biosafety requirements.</li>
+            <li>Conducted TB diagnostics including GenExpert sputum testing and AFB microscopy.</li>
+            <li>Performed adult and pediatric phlebotomy using established SOPs, specimen-handling procedures and biosafety practices.</li>
+            <li>Prepared slides, performed staining and conducted microscopic examinations for routine laboratory investigations.</li>
+            <li>Entered patient and test information into HISDU and other health-department portals to support accurate digital records.</li>
+            <li>Maintained stocks of consumables and reagents and supported basic equipment maintenance activities.</li>
+            <li>Coordinated with doctors and patients regarding test guidance, specimen requirements and result clarification.</li>
+            <li>Supported data entry, report printing and result dispatch for OPD and ward services.</li>
+            <li>Followed hospital-level biosafety, quality-control and infection-prevention protocols throughout laboratory activities.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & EDUCATION -->
+    <div class="two-col-grid" id="education">
+      <!-- Achievements -->
+      <section class="ios-card">
+        <div class="section-header">
+          <div class="section-title-group">
+            <div class="section-icon">🏆</div>
+            <h2 class="section-title">Key Achievements</h2>
+          </div>
+        </div>
+        <article class="exp-glass-item">
+          <ul class="exp-bullets">
+            <li>Processed approximately <strong>50–70 clinical samples per day</strong> in a diagnostic laboratory environment.</li>
+            <li>Maintained <strong>more than 98% error-free reporting</strong> across laboratory sections at Universal Lab, as documented in the source CV.</li>
+            <li>Developed broad multi-section laboratory exposure through rotations in biochemistry, hematology, microbiology, parasitology and blood bank services at THQ Civil Hospital Chishtian.</li>
+            <li>Built hands-on capability in both routine and specialized laboratory testing, including iCHROMA-III, Beckman Coulter, GenExpert and AFB microscopy.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Education -->
+      <section class="ios-card">
+        <div class="section-header">
+          <div class="section-title-group">
+            <div class="section-icon">🎓</div>
+            <h2 class="section-title">Education</h2>
+          </div>
+        </div>
+        <div class="edu-list">
+          <div class="edu-item">
+            <div>
+              <div class="edu-degree">BS Medical Laboratory Technologist (Ongoing)</div>
+              <div class="edu-school">Informatics College, Bahawalnagar</div>
+            </div>
+            <span class="edu-score">2025 – 2029</span>
+          </div>
+          <div class="edu-item">
+            <div>
+              <div class="edu-degree">Medical Laboratory Technology (MLT) – Diploma, 2 Years</div>
+              <div class="edu-school">Punjab Medical Faculty (PMF), Lahore</div>
+            </div>
+            <span class="edu-score">2022 – 2024</span>
+          </div>
+          <div class="edu-item">
+            <div>
+              <div class="edu-degree">Matriculation – Science</div>
+              <div class="edu-school">Govt. Model High School, Chishtian</div>
+            </div>
+            <span class="edu-score">2016 – 2018</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PROFESSIONAL STRENGTHS, LANGUAGES & REFERENCES -->
+    <div class="two-col-grid" id="strengths">
+      <section class="ios-card">
+        <div class="section-header">
+          <div class="section-title-group">
+            <div class="section-icon">💡</div>
+            <h2 class="section-title">Professional Strengths</h2>
+          </div>
+        </div>
+        <div class="glass-pills-grid">
+          <div class="modern-glass-box"><span class="box-dot dot-green"></span><span><strong>Laboratory Workflow Management:</strong> Organizing specimen reception, processing, testing, documentation, reporting &amp; dispatch</span></div>
+          <div class="modern-glass-box"><span class="box-dot dot-green"></span><span><strong>Quality Focus:</strong> Applying QA/QC controls, SOPs, biosafety requirements &amp; laboratory quality practices</span></div>
+          <div class="modern-glass-box"><span class="box-dot dot-green"></span><span><strong>Analytical Problem Solving:</strong> Identifying specimen, workflow &amp; documentation issues and escalating appropriately</span></div>
+          <div class="modern-glass-box"><span class="box-dot dot-green"></span><span><strong>Communication:</strong> Coordinating with patients, doctors, technologists &amp; laboratory colleagues</span></div>
+          <div class="modern-glass-box"><span class="box-dot dot-green"></span><span><strong>Time Management:</strong> Supporting high-volume testing &amp; timely reporting in routine and hospital settings</span></div>
+          <div class="modern-glass-box"><span class="box-dot dot-green"></span><span><strong>Professional Ethics:</strong> Maintaining patient confidentiality, accurate records &amp; responsible handling of clinical information</span></div>
+        </div>
+      </section>
+
+      <section class="ios-card">
+        <div class="section-header">
+          <div class="section-title-group">
+            <div class="section-icon">🌐</div>
+            <h2 class="section-title">Languages &amp; References</h2>
+          </div>
+        </div>
+        <div style="margin-bottom: 18px;">
+          <div style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); margin-bottom: 10px;">
+            Languages
+          </div>
+          <div class="glass-pills-grid">
+            <div class="modern-glass-box"><span class="box-dot dot-orange"></span><span>English</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-orange"></span><span>Urdu</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-orange"></span><span>Punjabi</span></div>
+            <div class="modern-glass-box"><span class="box-dot dot-orange"></span><span>Local</span></div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); margin-bottom: 10px;">
+            References
+          </div>
+          <div class="modern-glass-box">
+            <span class="box-dot dot-blue"></span>
+            <span>Available upon request.</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <script>
+    // iOS Theme Switcher (Light Glass <-> Dark Glass)
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeLabel = document.getElementById('themeLabel');
+    const rootHtml = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+      const current = rootHtml.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      rootHtml.setAttribute('data-theme', next);
+      if (next === 'dark') {
+        themeIcon.textContent = '☀️';
+        themeLabel.textContent = 'Light Glass';
+      } else {
+        themeIcon.textContent = '🌙';
+        themeLabel.textContent = 'Dark Glass';
+      }
+    });
+
+    // Live Search Filter for Round Transparent Modern Boxes
+    const skillSearch = document.getElementById('skillSearch');
+    const allPills = document.querySelectorAll('#competenciesGrid .modern-glass-box, #skillsGrid .modern-glass-box, #expertiseGrid .modern-glass-box, #certificationsGrid .modern-glass-box');
+
+    skillSearch.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      allPills.forEach(pill => {
+        const text = pill.textContent.toLowerCase();
+        if (!query || text.includes(query)) {
+          pill.classList.remove('hidden-pill');
+        } else {
+          pill.classList.add('hidden-pill');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
